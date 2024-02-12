@@ -1,0 +1,22 @@
+.{
+    .name = "sokol-zig-microui-example",
+    .version = "2.0.1",
+    .minimum_zig_version = "0.12.0",
+
+    .paths = .{
+        "src",
+        "lib",
+        "build.zig",
+        "build.zig.zon",
+        "CHANGELOG.md",
+        "README.md",
+    },
+    .dependencies = .{
+        .sokol = .{
+            //.path = "./sokol-zig",
+            .url = "git+https://github.com/floooh/sokol-zig.git#e0df69dc8ca17053bfa48ecec46dde02acb4395b",
+            .hash = "122070b288a2a945ad54ffef1c3809f67c136e9813d294ffea209abf7f3171a4b8e6",
+        },
+    },
+}
+
