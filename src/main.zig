@@ -316,7 +316,6 @@ fn log_window(_: *cc.mu_Context) void {
 
 pub fn u8_slider(value: *u8, low: i32, high: i32) void {
     var tmp: f32 = 0;
-    //_ = &low; _ = &high; _=&value; _=&tmp;
     cc.mu_push_id(ctx, @ptrCast(&value), @sizeOf(cc.mu_Real));
     tmp = itof(value.*);
     _ = cc.mu_slider_ex(ctx, &tmp, itof(low), itof(high), 0, "%.0f", cc.MU_OPT_ALIGNCENTER);
